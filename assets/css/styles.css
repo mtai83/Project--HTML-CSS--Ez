@@ -1,0 +1,765 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #171100;
+    --second-color: #FFB900;
+    --third-color: #5F5B53;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ======= Common ========= */
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;     
+    padding: 0;
+    border: none;
+    border-radius: 50%;   
+}
+
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;   
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    border: none;
+    text-align: center;
+}
+
+
+.btn-see-more {
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+}
+
+.btn-see-more a {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+}
+
+.cta-btn {
+    width: 137px;
+    height: 50px;
+    border-radius: 26px;
+    background: var(--second-color);
+}
+
+.btn-see-more:hover {
+    background-color: var(--second-color);
+}
+
+.btn:hover ,  .btn-circle:hover {
+    opacity: 0.85;
+}
+
+/* ============================= Header ===================================== */
+.header {
+    padding-top: 36px;
+    background: #FFFCF4;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header .menu {
+    margin-left: 491px;
+    margin-right: 22px;
+}
+
+.header .menu a {
+    display: inline-block;
+    padding: 9px 21px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--third-color);
+}
+
+.header .menu a:hover {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.header .btn {
+    width: 144px;
+    height: 50px;
+    margin-left: auto;
+    background-color: var(--primary-color);
+    border-radius: 24.5px;
+}
+
+.header .btn a {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    padding: 8px 30px;
+}
+
+/* ==================================== Hero ================================ */
+.hero {
+    padding: 64px 0 65px;
+    background: #FFFCF4;
+}
+
+.hero .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .hero-Image {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.img-block {
+    position: relative;
+}
+
+.menu-courses {
+    position: absolute;
+    display: inline-block;
+    width: 270px;
+    right: -100px;
+    bottom: 48px;
+    padding: 24px 58px 24px 24px;
+    background-color: #FFF;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+
+}
+
+.hero .menu-courses-item {
+    position: relative;
+    margin-top: 14px;
+}
+
+.hero .menu-courses-item button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+.hero .menu-courses-item .column {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    margin-left: 64px;
+}
+
+.hero .menu-courses-item .desc-menu-courses {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #5F5B53;
+}
+
+.hero .menu-courses-item h3 {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--primary-color);
+
+}
+/* ------Hero info------------ */
+.hero .info {
+    width: 470px;
+}
+.hero .info .title {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: var(--primary-color);
+}
+
+.hero .desc {
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--third-color);
+}
+
+.hero .btn-action {
+    margin-top: 38px;
+}
+
+.hero .btn {
+    width: 180px;
+    min-height: 64px;
+    background-color: var(--second-color);
+    border-radius: 32px;
+}
+
+.hero .btn a {
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 15px 20px;
+    color: #FFFFFF;
+}
+
+.hero .btn-action .btn-circle {
+    margin: auto 14px auto 28px;
+    background-color: #FFF;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .icon-Watch {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    clip-path: polygon(0 0 , 100% 50% , 0 100%);
+    background: var(--second-color);
+    transform: translateX(25%);
+}
+
+.hero .btn-action span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.stats {
+    margin-top: 48px;
+    width: 361px;
+}
+
+.stats .stats-list {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.stats .stats-list strong {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.4rem;
+    margin-right: 12px;
+    color: var(--primary-color);
+}
+
+/* =*=*=*============================== Courses ========================*=*=*= */
+
+.courses {
+    padding: 200px 0;
+}
+
+.courses .heading .title {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: var(--primary-color);
+}
+
+.courses .heading .btn-action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.courses .heading .btn-action .btn-circle +.btn-circle {
+    margin-left: 18px;
+}
+
+.courses .heading .btn-circle {
+    border: 1px solid var(--second-color);
+    background-color: #FFF;
+}
+
+.courses .heading .btn-circle a {
+    padding: 5px 10px;
+}
+
+.courses .heading .btn-circle a i  {
+    display: inline-block;
+    width: 6px;
+    height: 12px;
+    clip-path: polygon(0 15%, 70% 51%, 0 85%, 10% 100%, 100% 50%, 10% 0);
+    border-radius: 999px;
+    background-color:  var(--second-color);
+}
+
+.courses .heading .btn-circle .foward {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.courses .heading .btn-circle:hover  {
+    background-color: var(--second-color);
+}
+
+.courses .heading .btn-circle:hover a i {
+    background-color: #FFF;
+}
+
+.courses .heading .desc {
+    width: 458px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--third-color);
+    }
+
+/* ---------------Courses List -------------*/
+.courses .list {
+    display: flex;
+    margin-top: 55px;
+    justify-content: space-between;
+}
+
+.courses .list .item {
+    border-radius: 12px;
+    background: #FFFFFF;
+}
+
+.courses .list .item:hover {
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.courses .list .item .info {
+    width: 326px;
+    margin: 0 auto;
+    padding: 16px 0 22px;
+}
+
+.courses .list .item .illustration {
+    width: 370px;
+    height: 278px;
+    background: #789;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.courses .list .item .illustration img {
+    width: 370px;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.courses .list .item .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses .list .info .rate {
+    color: var(--second-color);
+}
+
+.courses .list .info .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--primary-color);
+}
+
+.courses .list .info .desc {
+    margin-top: 6px;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: var(--third-color);
+}
+
+/* =====================+++  Feedback   +++============================ */
+.feedback {
+    padding: 96px 0;
+    background-color: #2E2100;
+}
+
+.feedback .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback .users {
+    width: 200px;
+}
+
+.feedback .users .avt {
+    display: block;
+    width: 72px;
+    height: 72px;   
+    object-fit: cover;
+    border-radius: 100%;
+    background-color: #789;
+}
+
+.feedback .users strong {
+    display: inline-block;
+    margin-top: 18px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #F7F7F7;
+}
+
+.feedback .users .desc {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB3;
+}
+
+.feedback .users .dot {
+    background-color: #634700;
+}
+
+.feedback .users .dot:hover {
+    cursor: pointer;
+    background-color: var(--second-color);
+}
+
+.feedback .comment {
+    width: 770px;
+}
+
+.feedback .comment p {
+    margin-left: 30px;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #FFFFFF;
+}
+
+/* ======================= Call To Action   ======================================= */
+.CTA {
+    padding: 200px 0;
+}
+
+.CTA .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CTA .content-left {
+    width: 570px;
+}
+
+.CTA .content-right {
+    width: 470px;
+    margin-left: auto;
+}
+
+.CTA .Cta-Lish {
+    display: flex;
+    height: 440px;
+    align-items: center;
+}
+
+.CTA .Cta-Lish + .Cta-Lish {
+    margin-top: 200px;
+}
+
+/* ----------- CTA Illutrasion ---------- */
+.CTA .Cta-Lish .Illutrasion {
+    height: inherit;       
+     /* Thừa kế height của .Cta-lish ==> để chiếm hết dc chiều cao trong lish ==> Nên mới chỉnh dc các img bên trong 
+        Nếu ko thừa kế thì height sẽ auto = phần tử bên trong  Vì thuộc tính align-item:center ở trong .Cta-Lish làm height co lại*/
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.CTA .Cta-Lish .Illutrasion.content-left img{
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.CTA .Cta-Lish .Illutrasion.content-left img:nth-of-type(odd) {
+    align-self: flex-end;
+}
+
+.CTA .Cta-Lish .Illutrasion.content-right img{
+    width: inherit;             /* Thừa kế lại width vs heght của .content-right ==> cho img lấp đầy dc chỗ của nó */
+    height: inherit;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* ----------CTA Info ------------------------*/
+.CTA .Cta-Lish .info .title {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+
+.CTA .Cta-Lish .info .desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: var(--third-color);
+}
+
+.CTA .cta-btn {
+    margin-top: 32px;
+}
+
+.CTA .cta-btn a {
+    padding: 10px 22px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #FFF;
+}
+
+/* ==========================   Blog    ================================= */
+.blog {
+    padding: 96px 0;
+    background-color: #FFFCF4;
+}
+
+.blog .heading {
+    width: 448px;
+    margin: 0 auto;
+    text-align: center;
+ 
+}
+
+.blog .heading h2 {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #130606;
+}
+
+.blog .heading p {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #696262;
+}
+
+/* ------------- Blog Lish --------------------- */
+.blog .blog-lish {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog .blog-item {
+    width: 370px;
+    border-radius: 16px;
+    background: #FFFFFF;
+}
+
+.blog .blog-item:hover {
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.blog .blog-lish .blog-item .Illu {
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+    background-color: #789;
+}
+
+/* ----------------   Blog Info   ----------------- */
+.blog .blog-item .info {
+    width: 330px;
+    margin: 0 auto;
+    padding: 20px 0 28px;
+}
+
+.blog .blog-item .info .date {
+    display: flex;
+    align-items: center;
+}
+
+.blog .blog-item .info i {
+    display: inline-block;
+    background-color: var(--second-color);
+}
+
+.blog .blog-item .info p {
+    margin-left: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: var(--third-color);
+}
+
+.blog .blog-item .info .retangle {
+    margin: 12px 0;
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #E2DFDA;
+}
+
+.blog .blog-item .info h3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: var(--primary-color);
+}
+
+.blog .blog-item .info button {
+    margin-top: 12px;
+}
+ 
+/* --------------- Blog dot action ----------- */
+.blog .dot-action {
+    margin-top: 38px;
+    text-align: center;
+}
+
+.blog .dot-action .dot {
+    background-color: var(--third-color);
+}
+
+.blog .dot-action .dot:hover {
+    cursor: pointer;
+    background-color: var(--second-color);
+}
+
+/* ==========   Footer  ==================== */
+.footer {
+    padding: 96px 0 28px;
+    background-color: #2E2100;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .info {
+    width: 267px;
+    margin-right: 145px;
+}
+
+.footer .info p {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB2;
+}
+
+.footer .info .social {
+    margin-top: 18px;
+}
+
+.footer .info .social img + img {
+    margin-left: 18px;
+}
+
+.footer .contact {
+    max-width: 231px;
+
+}
+
+.footer .contact +.contact {
+    margin-left: 130px;
+}
+
+.footer .contact h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+
+.footer .contact .rectangle {
+    margin-top: 14px;
+    margin-bottom: 28px;
+    width: 130px;
+    height: 1px;
+    background: #59554B;
+}
+
+.footer .contact strong {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #FFF;
+}
+
+.footer .contact .desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB2;
+}
+
+.footer .contact .desc + .desc {
+    display: block;
+    margin-top: 12px;
+}
+
+.footer .end-line {
+    width: inherit;
+    height: 1px;
+    margin-top: 38px;
+    background: #59554B;
+}
+
+.footer .copyright {
+    margin-top: 28px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #807D74;
+}
+
+.footer .Logo {
+    color: #FFFFFF;
+}
